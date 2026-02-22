@@ -4,7 +4,34 @@
     <title>My First HTML Page</title>
 </head>
 <body>
-    <h1>Hello, Shan  Localhost!</h1>
-    <p>This page is running on your local server.</p>
+    <h1>Shan - My First HTML Page</h1>    
+     <label for="Item 1">Item 1:</label> 
+    <input type="text" id="Item 1" name="Item 1"><br><br>
+    <label for="Item 2">Item 2:</label> 
+    <input type="text" id="Item 2" name="Item 2"><br><br>  
+    <button id="btn_AddtoCart">AddtoCart</button> <br><br>
+    <button id="btn_TotalItems">TotalItems</button>
+
+    <script>
+        const AddCartbutton = document.getElementById("btn_AddtoCart");
+        const TotalItemsbutton = document.getElementById("btn_TotalItems");
+        const Item1 =document.getElementById("Item 1");
+        const Item2 =document.getElementById("Item 2");
+
+        AddCartbutton.addEventListener("click", AddtoCarthandleClick);
+        TotalItemsbutton.addEventListener("click",TotalItemshandleClick);
+
+        function AddtoCarthandleClick() 
+        {
+        alert("AddtoCart Button clicked!");
+        }
+    function TotalItemshandleClick ()
+        {
+        alert("TotalItems Button clicked!"+ Item1.value);
+        }
+    
+    </script>
+
 </body>
+
 </html>

@@ -43,9 +43,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     function TotalItemshandleClick ()
         {
         alert("TotalItems Button clicked!"+ Item1.value);
-            window.dataLayer.push({
+            window.dataLayer.push(
+{
     'event': 'TotalItemClicked',
     'Item1': Item1.value
+
+});
                 
         }
     
@@ -54,6 +57,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </body>
 
 </html>
+
 
 
 
